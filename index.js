@@ -10,7 +10,21 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
-
-const titleCased = () => {
-  return tutorials
+// Take each index of tutorials array
+let newestArr = []
+function titleCased(arr) {
+  arr.map(str => {
+    let newStr = str.split(" ")
+    replaceFirstChar(newStr)
+  })
+  return newestArr
 }
+
+titleCased(tutorials);
+
+function replaceFirstChar(arr) {
+  let newArr = arr.map(word => word[0].toUpperCase() + word.slice(1))
+  newestArr.push(newArr)
+}
+// Map each string, split string, manipulate to title case
+// Return an array with title cased tutorials
