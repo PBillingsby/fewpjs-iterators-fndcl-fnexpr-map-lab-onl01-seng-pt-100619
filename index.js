@@ -20,4 +20,5 @@ function titleCased() {
     let newStr = tut.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
     newArr.push(newStr)
   })
+  return newArr
 }
