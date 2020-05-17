@@ -12,9 +12,9 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
+newArr = []
 
 function titleCased(arr) {
-  newArr = []
   arr.map(tut => {
     let newStr = tut.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
     newArr.push(newStr)
